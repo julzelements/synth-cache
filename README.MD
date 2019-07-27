@@ -1,0 +1,1 @@
+to start run `npx serve` from root dir
