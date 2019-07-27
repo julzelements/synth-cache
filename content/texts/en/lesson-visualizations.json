@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "lfoAmount": "LFO Amount",
+        "rate": "Rate",
+        "pitch": "Pitch",
+        "pulseWidth": "Pulse Width",
+        "noiseAmplitude": "Noise Amplitude",
+        "pressAndHold": "Press and Hold",
+        "playing": "Playing",
+        "time": "Time",
+        "modbotLFOLabel": "LFO"
+    }
+}

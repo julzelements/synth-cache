@@ -1,0 +1,47 @@
+{
+    "parameter_names": {
+        "oscillator_noise_amplitude": {"full" : "Noise Amplitude", "label": "Amplitude"},
+        "oscillator_pulse_amplitude": {"full" : "Pulse Oscillator Amplitude", "label": "Amplitude"},
+        "oscillator_pulse_width": {"full" : "Pulse Width", "label": "Width"},
+        "oscillator_saw_amplitude": {"full" : "Saw Amplitude", "label": "Amplitude"},
+        "oscillator_saw_detune_coarse": {"full" : "Saw Detune Coarse", "label": "Detune Coarse"},
+        "oscillator_saw_detune_fine": {"full" : "Saw Detune Fine", "label": "Detune Fine"},
+        "amplitude_envelope_attack": {"full" : "Amp Envelope Attack", "label": "Attack"},
+        "amplitude_envelope_decay": {"full" : "Amp Envelope Decay", "label": "Decay"},
+        "amplitude_envelope_sustain": {"full" : "Amp Envelope Sustain", "label": "Sustain"},
+        "amplitude_envelope_release": {"full" : "Amp Envelope Release", "label": "Release"},
+        "modulation_envelope_attack": {"full" : "Modulation Envelope Attack", "label": "Attack"},
+        "modulation_envelope_decay": {"full" : "Modulation Envelope Decay", "label": "Decay"},
+        "modulation_envelope_sustain": {"full" : "Modulation Envelope Sustain", "label": "Sustain"},
+        "modulation_envelope_release": {"full" : "Modulation Envelope Release", "label": "Release"},
+        "filter_envelope_amount": {"full" : "Mod Envelope > Filter", "label": "Envelope Amount"},
+        "filter_frequency": {"full" : "Filter Frequency (Low-Pass)", "label": "Frequency"},
+        "filter_resonance": {"full" : "Filter Resonance (Low-Pass)", "label": "Resonance"},
+        "lfo_frequency": {"full" : "LFO Frequency", "label": "Frequency"},
+        "lfo_frequency_envelope_amount": {"full" : "Mod Envelope > LFO Frequency", "label": "Envelope Amount"},
+        "lfo_amplitude": {"full" : "LFO Amplitude", "label": "Amplitude"},
+        "lfo_amplitude_envelope_amount": {"full" : "Mod Envelope > LFO Amplitude", "label": "Envelope Amount"},
+        "lfo_shape": {"full" : "LFO Shape", "label": "Shape"},
+        "lfo_shape_options": {
+            "sin": "Sine",
+            "saw_down": "Saw",
+            "square": "Square",
+            "sample_hold": "S&H"
+        },
+        "lfo_retrigger": {"full": "LFO Retrigger", "label": "Retrigger"},
+        "lfo_retrigger_options": {
+            "off": "Off",
+            "on": "On"
+        },
+        "oscillator_pulse_width_envelope_amount": {"full" : "Mod Envelope > Pulse Width", "label": "Envelope Amount"},
+        "amplitude_lfo_amount": {"full" : "LFO > Amplitude", "label": "LFO Amount"},
+        "filter_lfo_amount": {"full" : "LFO > Filter", "label": "LFO Amount"},
+        "oscillator_pitch_offset_lfo_amount": {"full" : "LFO > Pitch", "label": "LFO Amount"},
+        "oscillator_pitch_offset_envelope_amount": {"full" : "Mod Envelope > Pitch", "label": "Envelope Amount"},
+        "oscillator_pulse_width_lfo_amount": {"full" : "LFO > Pulse Width", "label": "LFO Amount"},
+        "oscillator_pitch_offset": {"full" : "Pitch Offset", "label": "Pitch Offset"},
+        "global_slew_time": {"full" : "Global Slew Time", "label": "Slew Time"},
+        "glide_time": {"full" : "Pitch Glide Time", "label": "Glide"},
+        "amplitude": {"full" : "Amplitude", "label": "Amplitude"}
+    }
+}

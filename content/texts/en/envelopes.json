@@ -1,0 +1,14 @@
+{
+    "axisLabels": {
+        "amplitude": "Amplitude",
+        "cutoffFrequency": "Cutoff Frequency",
+        "pitch": "Pitch",
+        "time": "Time"
+    },
+    "stages": {
+        "attack": "Attack",
+        "decay": "Decay",
+        "sustain": "Sustain",
+        "release": "Release"
+    }
+}

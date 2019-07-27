@@ -1,0 +1,21 @@
+{
+    "names": {
+        "default": "Default",
+        "american-siren": "American siren",
+        "bouncing-ball": "Bouncing ball",
+        "distortion": "Distortion",
+        "german-siren": "German siren",
+        "hihat": "Hihat",
+        "laser-drum": "Laser / drum",
+        "noisy-lead": "Noisy lead",
+        "old-fashioned-computer": "Old-fashioned computer",
+        "plucked-bass": "Plucked bass",
+        "release-pluck": "Release pluck",
+        "strings": "Strings",
+        "subbass": "Subbass",
+        "synth-kick": "Synth kick",
+        "two-sounds-in-one": "Two sounds in one",
+        "west-coast-lead": "West Coast lead",
+        "wow-bass": "“Wow” bass"
+    }
+}

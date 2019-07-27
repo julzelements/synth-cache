@@ -1,0 +1,32 @@
+{
+    "panel_names": {
+        "sequence": "Sequence",
+        "presets": "Presets",
+        "pulse_oscillator": "Square Oscillator",
+        "saw_oscillator": "Saw Oscillator",
+        "pitch": "Pitch",
+        "noise": "Noise",
+        "amplitude_envelope": "Amplitude Envelope",
+        "amplitude": "Amplitude",
+        "low_pass_filter": "Low-Pass Filter",
+        "lfo": "LFO",
+        "mod_envelope": "Mod Envelope",
+        "modulation": "Modulation"
+    },
+    "tab_names": {
+        "sources": "Sources",
+        "amplitude": "Amplitude",
+        "filter": "Filter",
+        "modulation": "Modulation"
+    },
+    "sequences": {
+        "with-drums": "(with drums)",
+        "no-downbeat": "No downbeat",
+        "midtempo": "Midtempo",
+        "legato-lead": "Legato lead",
+        "slow-and-insistent": "Slow and insistent",
+        "eleven-fast-notes": "Eleven fast notes",
+        "not-quite-triplets": "Not quite triplets",
+        "four-on-the-floor": "Four on the floor"
+    }
+}

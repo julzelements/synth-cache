@@ -1,0 +1,60 @@
+{
+    "calls-to-action": {
+        "send-us-your-feedback": "Send us your feedback!",
+        "go-to-ableton": "Go to Ableton.com ›"
+    },
+    "technical": {
+        "browser-incompatible": "Your browser does not support this site. Please try using a recent version of Chrome, Firefox, Safari, Edge, or Opera.",
+        "noscript": "Please enable JavaScript in order to use this site."
+    },
+    "unmute-screen": {
+        "message": "Unmute your device before continuing",
+        "button": "Done, let’s go!"
+    },
+    "cookie-consent": {
+        "message": "We use our own cookies and third party cookies to ensure the proper functioning of the website, to personalize content and advertising and to analyze data traffic and user behavior based on pseudonymous data.",
+        "dismiss": "OK",
+        "learn-more": "More information and opt-out"
+    },
+    "names": {
+        "learning-synths": "Learning Synths",
+        "musiclab": "Musiclab",
+        "home": "Home",
+        "playground": "Playground",
+        "settings": "Settings",
+        "beta": "Beta"
+    },
+    "tooltips": {
+        "press": "Press",
+        "drag": "Drag",
+        "hold": "Hold",
+        "play": "Play",
+        "sequence": "Play Pattern",
+        "presets": "Presets"
+    },
+    "navigation": {
+        "next": "Next",
+        "back": "Back",
+        "previous": "Previous"
+    },
+    "descriptions": {
+        "site": "Learn about synthesizers via Ableton’s interactive website. Play with a synth in your browser and learn to use the various parts of a synth to make your own sounds.",
+        "playground": "Make your own sounds"
+    },
+    "not-found": {
+        "title": "The page you're looking for does not exist.",
+        "recommendation1": "You could go back to the [home](/) page.",
+        "recommendation2": "But while you're here, you could also make some interesting noises."
+    },
+    "settings": {
+        "audioQuality": "Audio Quality",
+        "audioQualityInfo": "If you are experiencing issues with audio playback, changing to a lower quality setting might be helpful.",
+        "midiInput": "MIDI Input",
+        "midiInputUnavailable": "Your browser does not support MIDI input.",
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "on": "On",
+        "off": "Off"
+    }
+}
