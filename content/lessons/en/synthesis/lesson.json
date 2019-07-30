@@ -1,0 +1,3907 @@
+{
+  "name": "Learning Synths",
+  "id": "synthesis",
+  "chapters": [
+    {
+      "id": "get-started",
+      "title": "Get started",
+      "theme": "theme-g",
+      "pages": [
+        {
+          "id": "get-started-making-sounds",
+          "name": "Get started",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Get started making sounds"
+            },
+            {
+              "metadata": {},
+              "markdown": "Drag in the box below to play a *synthesizer*."
+            },
+            {
+              "metadata": {
+                "classes": "highlighted centered"
+              },
+              "markdown": "If you don’t hear anything, make sure your sound is on and the volume is turned up. And please use headphones for the best experience!"
+            },
+            {
+              "metadata": {
+                "embed": "synth-xy",
+                "xParameter": [
+                  {
+                    "name": "filter_frequency",
+                    "min": 300
+                  },
+                  {
+                    "name": "oscillator_pulse_width"
+                  }
+                ],
+                "yParameter": [
+                  {
+                    "name": "oscillator_noise_amplitude",
+                    "min": 0.25,
+                    "max": 0
+                  },
+                  {
+                    "name": "filter_lfo_amount",
+                    "min": 0,
+                    "max": 0.4
+                  },
+                  {
+                    "name": "lfo_frequency",
+                    "min": 20,
+                    "max": 1
+                  }
+                ],
+                "visualization": "glow",
+                "rotation": 7.5,
+                "classes": "centered synth-xy-2",
+                "preset": "subbass",
+                "tooltipKey": "common:tooltips.drag"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to how your dragging changes the sound."
+            },
+            {
+              "metadata": {
+                "relatedTerms": [
+                  "synthesizer"
+                ]
+              },
+              "markdown": "On this website, you’ll learn the basics of using synthesizers (or *synths*). No prior experience or equipment is required; you’ll do everything right here in your browser."
+            },
+            {
+              "metadata": {},
+              "markdown": "The box above controls a synth running in your web browser, but synthesizers come in many shapes and sizes. They can be physical instruments that musicians play on stage, noise-makers inside electronic devices and toys, or software running on a phone or computer."
+            },
+            {
+              "metadata": {},
+              "markdown": "Synthesizers make sound using electricity, usually with *controls* that let you change their sound. Some controls change just one specific aspect of the sound, while others, like the box above, change many aspects of the sound at once."
+            },
+            {
+              "metadata": {},
+              "markdown": "As you continue, you’ll learn how to use a synth’s controls to design your own sounds."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "making-changes",
+      "title": "Making changes",
+      "theme": "theme-a",
+      "subtitle": "Modifying sound",
+      "pages": [
+        {
+          "id": "amplitude",
+          "name": "Amplitude",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Amplitude"
+            },
+            {
+              "metadata": {
+                "classes": "left"
+              },
+              "markdown": "One of the most common aspects of sound you can control with a synth is *amplitude*."
+            },
+            {
+              "metadata": {
+                "classes": "right"
+              },
+              "markdown": "This control affects the synth’s amplitude without changing any other aspects of the sound:"
+            },
+            {
+              "metadata": {
+                "embed": "synth-xy",
+                "preset": "amplitude",
+                "xParameter": [
+                  {
+                    "name": "oscillator_pulse_amplitude"
+                  },
+                  {
+                    "name": "oscillator_saw_amplitude"
+                  }
+                ],
+                "visualization": "amplitude-ramp"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "right caption"
+              },
+              "markdown": "Listen to the loudness change as you drag the slider."
+            },
+            {
+              "metadata": {},
+              "markdown": "Increasing the amplitude makes a sound louder. Decreasing the amplitude makes the sound softer. The volume on your phone or computer is an amplitude control."
+            }
+          ]
+        },
+        {
+          "id": "pitch",
+          "name": "Pitch",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Pitch"
+            },
+            {
+              "metadata": {
+                "classes": "left"
+              },
+              "markdown": "Another important aspect of sound is *pitch* — its relative “highness” or “lowness.”"
+            },
+            {
+              "metadata": {
+                "classes": "centered"
+              },
+              "markdown": "This control affects just the synth’s pitch:"
+            },
+            {
+              "metadata": {
+                "embed": "synth-xy",
+                "preset": "pitch",
+                "yParameter": {
+                  "name": "oscillator_pitch_offset",
+                  "min": -24,
+                  "max": 48
+                },
+                "visualization": "pitch-strip",
+                "restAtInitialY": true
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to the pitch change as you drag the slider."
+            },
+            {
+              "metadata": {},
+              "markdown": "Many musical instruments allow you to control pitch. For example, keys on the left side of a piano play lower pitches, while keys on the right side play higher pitches. Synthesizers can play a much wider range of pitch than any acoustic instrument — from the very lowest to the very highest sounds that humans can hear."
+            }
+          ]
+        },
+        {
+          "id": "play-with-amplitude-and-pitch",
+          "name": "Play with amplitude and pitch",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Play with amplitude and pitch"
+            },
+            {
+              "metadata": {},
+              "markdown": "The box below affects just the synth’s amplitude and pitch. Play with amplitude and pitch together and see what sorts of sounds you can discover."
+            },
+            {
+              "metadata": {
+                "embed": "synth-xy",
+                "xParameter": [
+                  {
+                    "name": "oscillator_pitch_offset",
+                    "min": -12,
+                    "max": 12
+                  }
+                ],
+                "yParameter": [
+                  {
+                    "name": "oscillator_pulse_amplitude"
+                  },
+                  {
+                    "name": "oscillator_saw_amplitude"
+                  }
+                ],
+                "tooltipKey": "common:tooltips.drag",
+                "visualization": "glow",
+                "rotation": 7.5,
+                "classes": "centered outlined",
+                "preset": "theremin",
+                "note": 64
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to the changes in amplitude as you drag up and down and the changes in pitch as you drag left and right."
+            },
+            {
+              "metadata": {},
+              "markdown": "This box makes our synth work a bit like an early electronic instrument called a [theremin](https://www.youtube.com/watch?v=PjnaciNT-wQ), which is also played with two controls: one for pitch and another for amplitude."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synth-basics",
+      "title": "Synth basics",
+      "theme": "theme-h",
+      "subtitle": "Introducing synthesizers",
+      "pages": [
+        {
+          "id": "playing-the-synth",
+          "name": "Playing the synth",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Playing the synth"
+            },
+            {
+              "metadata": {},
+              "markdown": "Some synthesizers are physical instruments with piano-like keyboards, like the one pictured below. These start playing a *note* when a key is pressed, and stop when the key is released."
+            },
+            {
+              "metadata": {
+                "embed": "synth3d-press",
+                "preset": "playing-different-pitches",
+                "notes": "e'",
+                "rotation": "20 0 0",
+                "position": "0 0.10 0",
+                "emphasizeParameters": true,
+                "tooltipKey": "lesson-visualizations:labels.pressAndHold"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "caption centered"
+              },
+              "markdown": "Listen to the note start when you press and stop when you let go."
+            },
+            {
+              "metadata": {
+                "classes": "centered highlighted"
+              },
+              "markdown": "When you play the synthesizer on this website, pressing a control is like pressing a key on a physical keyboard synthesizer. Pressing down plays a note, and releasing makes it stop."
+            }
+          ]
+        },
+        {
+          "id": "playing-different-pitches",
+          "name": "Playing different pitches",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Playing different pitches"
+            },
+            {
+              "metadata": {},
+              "markdown": "On a synthesizer with a keyboard, the keyboard is also a control for the synth’s pitch. Keys to the left make the pitch lower; keys to the right make the pitch higher."
+            },
+            {
+              "metadata": {
+                "embed": "synth3d-press",
+                "rotation": "20 0 0",
+                "position": "0 0.10 0",
+                "preset": "playing-different-pitches",
+                "notes": "e' d' e' a  f' e' f' e' d' f' e' f' a d' c' d' c' b d' c'",
+                "tooltipKey": "lesson-visualizations:labels.pressAndHold",
+                "emphasizeParameters": true
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "caption centered"
+              },
+              "markdown": "Listen to the pitch change each time you press."
+            },
+            {
+              "metadata": {
+                "classes": "centered highlighted"
+              },
+              "markdown": "When you play the synth on this website, sometimes the synth will choose a different pitch for you with each new note."
+            },
+            {
+              "metadata": {},
+              "markdown": "This will let you focus on changing other aspects of sound without worrying about which pitch to play."
+            }
+          ]
+        },
+        {
+          "id": "changing-the-sound",
+          "name": "Changing the sound",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Changing the sound"
+            },
+            {
+              "metadata": {},
+              "markdown": "Both physical synthesizers and software synths (like the one on this website) have controls such as knobs and sliders."
+            },
+            {
+              "metadata": {
+                "embed": "synth3d-sliders",
+                "preset": "3dsynth",
+                "rotation": "10.0 0.0 0.0",
+                "position": "0.0 0.15 0.45",
+                "notes": "c",
+                "slider1Text": "amplitude",
+                "slider1Parameter": [
+                  {
+                    "name": "amplitude"
+                  }
+                ],
+                "slider2Text": "brightness",
+                "slider2Parameter": [
+                  {
+                    "name": "filter_frequency",
+                    "min": 800
+                  }
+                ],
+                "slider3Text": "movement",
+                "slider3Parameter": [
+                  {
+                    "name": "filter_lfo_amount",
+                    "min": 0
+                  }
+                ],
+                "tooltipKey": "common:tooltips.drag"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "amplitude"
+              },
+              "markdown": "This slider is for amplitude:"
+            },
+            {
+              "metadata": {
+                "footloose": "brightness"
+              },
+              "markdown": "This slider affects the “brightness”:"
+            },
+            {
+              "metadata": {
+                "footloose": "movement"
+              },
+              "markdown": "This one adds a bit of “movement”:"
+            },
+            {
+              "metadata": {},
+              "markdown": "Each of these controls affects a specific aspect of sound. You’ve already learned about amplitude and pitch. Later, you’ll learn how to work with “brightness,” “movement,” and many more."
+            }
+          ]
+        },
+        {
+          "id": "making-many-changes",
+          "name": "Making many changes",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Making many changes"
+            },
+            {
+              "metadata": {},
+              "markdown": "We’ll often play the synth on this website with a box like the one below. This control lets you drag to change many aspects of the sound at once."
+            },
+            {
+              "metadata": {
+                "embed": "synth3d-xy",
+                "notes": "c",
+                "position": "0.0 -0.2 -0.4",
+                "tooltipKey": "common:tooltips.drag",
+                "preset": "3dsynth-manychanges",
+                "xParameter": [
+                  {
+                    "name": "filter_frequency",
+                    "min": 20000,
+                    "max": 750
+                  },
+                  {
+                    "name": "filter_resonance",
+                    "min": 0.5,
+                    "max": 0
+                  },
+                  {
+                    "name": "lfo_frequency",
+                    "min": 1000,
+                    "max": 1
+                  },
+                  {
+                    "name": "filter_lfo_amount",
+                    "min": 0,
+                    "max": 0.05
+                  },
+                  {
+                    "name": "oscillator_saw_detune_coarse",
+                    "min": 0,
+                    "max": -0.5
+                  }
+                ],
+                "yParameter": [
+                  {
+                    "name": "oscillator_pulse_width",
+                    "min": "-.1",
+                    "max": 0.1
+                  },
+                  {
+                    "name": "oscillator_pulse_width_lfo_amount",
+                    "min": 0,
+                    "max": 0.1
+                  },
+                  {
+                    "name": "oscillator_noise_amplitude"
+                  }
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "caption centered"
+              },
+              "markdown": "Listen to the sound change as you drag, and notice the synthesizer’s moving controls."
+            },
+            {
+              "metadata": {},
+              "markdown": "This box lets you move many knobs at the same time, which allows for very complex changes with a simple control."
+            }
+          ]
+        },
+        {
+          "id": "what-can-synthesizers-sound-like",
+          "name": "What can synthesizers sound like?",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# What can synthesizers sound like?"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "playButtonTooltipKey": "common:tooltips.play",
+                "preset": "pluckedbass",
+                "showResetButton": "no",
+                "notes": "d f a a' d' f a",
+                "sequence": "\\tempo 4 = 92 d,8.    f,16  a, a, r d,8    f,16  a, a a, f16 c8\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "The next few pages let you play with a variety of sounds made with this website’s synthesizer. These are just a few examples of the kinds of sounds you’ll learn to create yourself."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "xy",
+                "xParameter": [
+                  {
+                    "name": "filter_frequency",
+                    "min": 20
+                  }
+                ],
+                "yParameter": [
+                  {
+                    "name": "filter_resonance"
+                  }
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "highlighted right"
+              },
+              "markdown": "Press the play button to start a repeating pattern of notes (or *sequence*). Then drag in the box to change the sound."
+            },
+            {
+              "metadata": {
+                "classes": "left"
+              },
+              "markdown": "If you play the synth with the box while the sequence is stopped, you’ll hear a new pitch with each press."
+            }
+          ]
+        },
+        {
+          "id": "slow-evolving-sounds",
+          "name": "Slow, evolving sounds",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Slow, evolving sounds"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "playButtonTooltipKey": "common:tooltips.play",
+                "preset": "strings",
+                "pressButtonTooltipKey": "common:tooltips.press",
+                "showResetButton": "no",
+                "notes": "e g a",
+                "sequence": "\\tempo 4 = 60  e' g' a'8 r a'4 b' a' g' e' g'\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "Here’s a mellow sound that changes in subtle ways when notes are held for a long time."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "xy",
+                "xParameter": [
+                  {
+                    "name": "filter_frequency",
+                    "min": 40
+                  }
+                ],
+                "yParameter": [
+                  {
+                    "name": "lfo_frequency",
+                    "min": 0.1,
+                    "max": 5
+                  },
+                  {
+                    "name": "oscillator_pitch_offset_lfo_amount",
+                    "min": 0,
+                    "max": 0.1
+                  }
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "Listen to how the “brightness” and “movement” change as you drag."
+            }
+          ]
+        },
+        {
+          "id": "sound-effects",
+          "name": "Sound effects",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Sound effects"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "american-siren",
+                "showResetButton": "no",
+                "notes": "a'",
+                "sequence": "\\tempo 4 = 5  a'\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "Use this box to make the synth morph between different sirens, alarms, and old-fashioned sci-fi robots."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "xy",
+                "xParameter": [
+                  {
+                    "name": "lfo_frequency",
+                    "min": 1,
+                    "max": 10
+                  }
+                ],
+                "yParameter": [
+                  {
+                    "name": "lfo_shape",
+                    "min": 0,
+                    "max": 3
+                  }
+                ]
+              },
+              "markdown": ""
+            }
+          ]
+        },
+        {
+          "id": "drums-and-percussion",
+          "name": "Drums and percussion",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Drums and percussion"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "synthkick",
+                "playButtonTooltipKey": "common:tooltips.play",
+                "showResetButton": "no",
+                "notes": "a,,",
+                "sequence": "\\tempo 4 = 120  a,,8 r8 a,, r a,, r a,, r\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "This box can make a range of electronic drum and percussion sounds."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "xy",
+                "xParameter": [
+                  {
+                    "name": "modulation_envelope_decay",
+                    "min": 1,
+                    "max": 2500
+                  },
+                  {
+                    "name": "modulation_envelope_release",
+                    "min": 1,
+                    "max": 2500
+                  }
+                ],
+                "yParameter": [
+                  {
+                    "name": "amplitude_envelope_decay",
+                    "min": 50,
+                    "max": 2500
+                  },
+                  {
+                    "name": "amplitude_envelope_release",
+                    "min": 50,
+                    "max": 2500
+                  }
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "You’ve seen that a synthesizer can sound like many different things. But how do you tell a synth what kind of sound to make?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "envelopes",
+      "title": "Envelopes",
+      "theme": "theme-b",
+      "subtitle": "Change over time",
+      "pages": [
+        {
+          "id": "change-over-time",
+          "name": "Change over time",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Change over time"
+            },
+            {
+              "metadata": {
+                "classes": "right"
+              },
+              "markdown": "So far, you’ve made changes to sound by dragging the synth’s controls by hand."
+            },
+            {
+              "metadata": {
+                "classes": "left"
+              },
+              "markdown": "But you can also make a synthesizer change aspects of its sound automatically."
+            },
+            {
+              "metadata": {
+                "embed": "synth-envelope",
+                "preset": "envelope-drawing",
+                "note": 60,
+                "minPitchOffset": -24,
+                "maxPitchOffset": 24
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Draw a shape and listen to the synth follow it to change the pitch."
+            },
+            {
+              "metadata": {},
+              "markdown": "As you draw in the box, you’re creating an *envelope* — the shape of a sound changing over time. In this section, you’ll learn how to use a synthesizer’s envelopes."
+            },
+            {
+              "metadata": {
+                "relatedTerms": [
+                  "modulation"
+                ]
+              },
+              "markdown": ""
+            }
+          ]
+        },
+        {
+          "id": "synthesizer-envelopes",
+          "name": "Synthesizer envelopes",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Synthesizer envelopes"
+            },
+            {
+              "metadata": {},
+              "markdown": "Synthesizers use *envelopes* to create shapes designed for making musical sounds. You adjust the envelope’s controls to tell it what kind of shape to make."
+            },
+            {
+              "metadata": {},
+              "markdown": "As the dot traces the envelope’s shape with each new note, some aspect of sound (in this case, pitch) changes automatically."
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "synthesizer-envelopes",
+                "showResetButton": "no",
+                "notes": "e",
+                "sequence": "\\tempo 4 = 85 e4 r e r8 e4 r8\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "xy",
+                "visualization": "adsr",
+                "rotation": 0,
+                "tooltipKey": "common:tooltips.drag",
+                "xParameter": [
+                  {
+                    "name": "modulation_envelope_attack",
+                    "breakpoints": [
+                      {
+                        "pct": 0,
+                        "value": 75
+                      },
+                      {
+                        "pct": 0.5,
+                        "value": 200
+                      },
+                      {
+                        "pct": 1,
+                        "value": 600
+                      }
+                    ]
+                  },
+                  {
+                    "name": "modulation_envelope_decay",
+                    "breakpoints": [
+                      {
+                        "pct": 0,
+                        "value": 400
+                      },
+                      {
+                        "pct": 0.5,
+                        "value": 100
+                      },
+                      {
+                        "pct": 1,
+                        "value": 25
+                      }
+                    ]
+                  },
+                  {
+                    "name": "modulation_envelope_release",
+                    "breakpoints": [
+                      {
+                        "pct": 0,
+                        "value": 150
+                      },
+                      {
+                        "pct": 0.5,
+                        "value": 500
+                      },
+                      {
+                        "pct": 1,
+                        "value": 900
+                      }
+                    ]
+                  }
+                ],
+                "yParameter": [
+                  {
+                    "name": "modulation_envelope_sustain",
+                    "breakpoints": [
+                      {
+                        "pct": 0,
+                        "value": 0.1
+                      },
+                      {
+                        "pct": 1,
+                        "value": 0.9
+                      }
+                    ]
+                  }
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to the “shape” of the notes change as you drag."
+            },
+            {
+              "metadata": {},
+              "markdown": "You don’t hear the envelope directly — the synth uses the envelope’s shape to determine how one or more *other* aspects of the sound change over time. This process of using some part of the synthesizer to affect other parts is called *modulation.* An envelope is an example of a modulator."
+            },
+            {
+              "metadata": {},
+              "markdown": "Most synthesizers have envelopes with four sections or *stages*, called *attack*, *decay*, *sustain*, and *release*. You’ll often see these abbreviated as *ADSR*. Let’s look at how each stage works."
+            }
+          ]
+        },
+        {
+          "id": "attack",
+          "name": "Attack",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Attack"
+            },
+            {
+              "metadata": {},
+              "markdown": "An envelope’s *attack* control determines how long it takes for the envelope to reach its peak at the start of a note."
+            },
+            {
+              "metadata": {
+                "classes": "highlighted right"
+              },
+              "markdown": "Press the button to play a note."
+            },
+            {
+              "metadata": {
+                "embed": "synth-adsr",
+                "preset": "pitch-modulation-envelope",
+                "attackParameter": "modulation_envelope_attack",
+                "decayParameter": "modulation_envelope_decay",
+                "sustainParameter": "modulation_envelope_sustain",
+                "releaseParameter": "modulation_envelope_release",
+                "linkRelease": true,
+                "attack": 1000,
+                "decay": 1,
+                "sustain": 1,
+                "release": 1,
+                "note": 40,
+                "lock": [
+                  "decay",
+                  "sustain",
+                  "release"
+                ],
+                "show": [
+                  "x-axis",
+                  "y-axis",
+                  "attack-label",
+                  "interaction-tooltip"
+                ],
+                "yAxisLabelKey": "envelopes:axisLabels.pitch"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Drag the **Attack** control left to make the attack faster or right to make it slower."
+            },
+            {
+              "metadata": {},
+              "markdown": "Play with the attack and hear how it affects the pitch."
+            }
+          ]
+        },
+        {
+          "id": "decay-and-sustain",
+          "name": "Decay and sustain",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Decay and sustain"
+            },
+            {
+              "metadata": {
+                "relatedTerms": [
+                  "decay",
+                  "sustain"
+                ]
+              },
+              "markdown": "An envelope’s *decay* control determines how long it takes for the envelope to decrease from its peak to the *sustain* level. The envelope will then stay at the sustain level as long as the note is held."
+            },
+            {
+              "metadata": {
+                "embed": "synth-adsr",
+                "preset": "pitch-modulation-envelope",
+                "attackParameter": "modulation_envelope_attack",
+                "decayParameter": "modulation_envelope_decay",
+                "sustainParameter": "modulation_envelope_sustain",
+                "releaseParameter": "modulation_envelope_release",
+                "linkRelease": true,
+                "attack": 0,
+                "decay": 1000,
+                "sustain": 0.3,
+                "release": 1,
+                "lock": [
+                  "attack",
+                  "release"
+                ],
+                "show": [
+                  "x-axis",
+                  "y-axis",
+                  "decay-label",
+                  "sustain-label",
+                  "interaction-tooltip"
+                ],
+                "yAxisLabelKey": "envelopes:axisLabels.pitch"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Drag the **Decay/Sustain** control up or down to change the sustain. Drag left or right to change the decay. Listen to how the pitch is affected with each change."
+            },
+            {
+              "metadata": {
+                "classes": "right"
+              },
+              "markdown": "Try turning the sustain all the way down and then adjust the decay."
+            },
+            {
+              "metadata": {
+                "classes": "centered"
+              },
+              "markdown": "Now turn the sustain all the way up and play with the decay again."
+            },
+            {
+              "metadata": {
+                "classes": "left"
+              },
+              "markdown": "Notice the difference? With sustain all the way up, decay has no effect; the pitch stays at its maximum level."
+            }
+          ]
+        },
+        {
+          "id": "release",
+          "name": "Release",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Release"
+            },
+            {
+              "metadata": {
+                "classes": "left",
+                "relatedTerms": [
+                  "release"
+                ]
+              },
+              "markdown": "An envelope’s *release* control determines how long it takes for the envelope to decrease to its minimum level after the note is released."
+            },
+            {
+              "metadata": {
+                "embed": "synth-adsr",
+                "preset": "pitch-modulation-envelope",
+                "attackParameter": "modulation_envelope_attack",
+                "decayParameter": "modulation_envelope_decay",
+                "sustainParameter": "modulation_envelope_sustain",
+                "releaseParameter": "modulation_envelope_release",
+                "linkRelease": true,
+                "attack": 0,
+                "decay": 1,
+                "sustain": 1,
+                "release": 1500,
+                "lock": [
+                  "attack",
+                  "decay",
+                  "sustain"
+                ],
+                "show": [
+                  "x-axis",
+                  "y-axis",
+                  "release-label",
+                  "interaction-tooltip"
+                ],
+                "yAxisLabelKey": "envelopes:axisLabels.pitch"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Drag the **Release** control left or right to make the release faster or slower."
+            },
+            {
+              "metadata": {},
+              "markdown": "Play with the release and hear how it affects the pitch."
+            }
+          ]
+        },
+        {
+          "id": "putting-the-envelope-together",
+          "name": "Putting the envelope together",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Putting the envelope together"
+            },
+            {
+              "metadata": {
+                "classes": "left"
+              },
+              "markdown": "Try adjusting the attack, decay, sustain, and release controls together."
+            },
+            {
+              "metadata": {
+                "embed": "synth-adsr",
+                "preset": "pitch-modulation-envelope",
+                "attackParameter": "modulation_envelope_attack",
+                "decayParameter": "modulation_envelope_decay",
+                "sustainParameter": "modulation_envelope_sustain",
+                "releaseParameter": "modulation_envelope_release",
+                "linkRelease": true,
+                "attack": 750,
+                "decay": 750,
+                "sustain": 0.25,
+                "release": 1000,
+                "accentColor": "green",
+                "show": [
+                  "x-axis",
+                  "y-axis",
+                  "attack-label",
+                  "decay-label",
+                  "sustain-label",
+                  "release-label"
+                ],
+                "yAxisLabelKey": "envelopes:axisLabels.pitch"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to how the pitch envelope changes as you drag the controls."
+            },
+            {
+              "metadata": {
+                "classes": "right"
+              },
+              "markdown": "As you play with these controls, try to find some settings that remind you of sounds you’ve heard. This process of exploration and comparison is a big part of learning to make your own sounds."
+            }
+          ]
+        },
+        {
+          "id": "modulating-amplitude-with-envelopes",
+          "name": "Modulating amplitude with envelopes",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Modulating amplitude with envelopes"
+            },
+            {
+              "metadata": {
+                "classes": "left"
+              },
+              "markdown": "So far, we’ve used an envelope to change (or modulate) the pitch. But envelopes can also be used to change other aspects of the sound, such as amplitude."
+            },
+            {
+              "metadata": {
+                "classes": "right"
+              },
+              "markdown": "Try adjusting the attack, decay, sustain, and release controls."
+            },
+            {
+              "metadata": {
+                "embed": "synth-adsr",
+                "preset": "long-piano",
+                "note": 57,
+                "attackParameter": "amplitude_envelope_attack",
+                "decayParameter": "amplitude_envelope_decay",
+                "sustainParameter": "amplitude_envelope_sustain",
+                "releaseParameter": "amplitude_envelope_release",
+                "attack": 750,
+                "decay": 750,
+                "sustain": 0.25,
+                "release": 1000,
+                "show": [
+                  "x-axis",
+                  "y-axis",
+                  "attack-label",
+                  "decay-label",
+                  "sustain-label",
+                  "release-label"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to how the amplitude envelope changes as you drag the controls."
+            },
+            {
+              "metadata": {},
+              "markdown": "Now, instead of adjusting an envelope that modulates the pitch, we’re adjusting an envelope that modulates the amplitude."
+            }
+          ]
+        },
+        {
+          "id": "matching-envelopes",
+          "name": "Matching envelopes",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Matching envelopes"
+            },
+            {
+              "metadata": {},
+              "markdown": "We’ve set the controls of the envelopes below to match the shapes of some familiar instrument sounds:"
+            },
+            {
+              "metadata": {},
+              "markdown": "## Drum"
+            },
+            {
+              "metadata": {
+                "embed": "one-shot-sampler",
+                "sample": "snare",
+                "gainInDb": -6,
+                "classes": "matching-envelopes-sampler"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "embed": "synth-adsr",
+                "preset": "better-snare",
+                "attackParameter": "amplitude_envelope_attack",
+                "decayParameter": "amplitude_envelope_decay",
+                "sustainParameter": "amplitude_envelope_sustain",
+                "releaseParameter": "amplitude_envelope_release",
+                "showResetButton": true,
+                "sustain": 0,
+                "classes": "matching-envelopes-envelope",
+                "show": [
+                  "interaction-tooltip"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to the envelope of the drum sound in the first example. Compare with the synth version in the second example (hold to sustain)."
+            },
+            {
+              "metadata": {},
+              "markdown": "We wanted this sound to get loud quickly, so we’ve set an extremely short attack. We also wanted the sound to get quiet quickly, so we’ve set the sustain to zero and the decay and release to similar (and fairly short) values."
+            },
+            {
+              "metadata": {},
+              "markdown": "## Wind instrument with a slow attack"
+            },
+            {
+              "metadata": {
+                "embed": "one-shot-sampler",
+                "sample": "clarinet",
+                "gainInDb": -2,
+                "classes": "matching-envelopes-sampler"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "embed": "synth-adsr",
+                "preset": "slow-clarinet",
+                "note": 57,
+                "attackParameter": "amplitude_envelope_attack",
+                "decayParameter": "amplitude_envelope_decay",
+                "sustainParameter": "amplitude_envelope_sustain",
+                "releaseParameter": "amplitude_envelope_release",
+                "showResetButton": true,
+                "linkAttack": true,
+                "linkDecay": true,
+                "linkSustain": true,
+                "linkRelease": true,
+                "classes": "matching-envelopes-envelope"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to the envelope of the sound in the first example. Compare with the synth version in the second example (hold to sustain)."
+            },
+            {
+              "metadata": {},
+              "markdown": "This sound has a slow attack to simulate the sound of an instrument starting from silence and gradually getting louder."
+            },
+            {
+              "metadata": {},
+              "markdown": "We’ve set a sustain of 100% so it will continue to sound for as long as you hold the note. This means that decay time doesn’t matter; try adjusting it to different values and notice that it has no effect."
+            },
+            {
+              "metadata": {},
+              "markdown": "## Wind instrument with a quieter sustain"
+            },
+            {
+              "metadata": {
+                "embed": "one-shot-sampler",
+                "sample": "sustain-clarinet",
+                "gainInDb": -2,
+                "classes": "matching-envelopes-sampler"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "embed": "synth-adsr",
+                "preset": "quiet-sustain-clarinet",
+                "note": 57,
+                "attackParameter": "amplitude_envelope_attack",
+                "decayParameter": "amplitude_envelope_decay",
+                "sustainParameter": "amplitude_envelope_sustain",
+                "releaseParameter": "amplitude_envelope_release",
+                "showResetButton": true,
+                "linkAttack": true,
+                "linkDecay": true,
+                "linkSustain": true,
+                "linkRelease": true,
+                "classes": "matching-envelopes-envelope"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to the envelope of the sound in the first example. Compare with the synth version in the second example (hold to sustain)."
+            },
+            {
+              "metadata": {},
+              "markdown": "This sound has a faster attack, a moderately slow decay time, a low (but not zero) sustain level, and a moderate release. For this sound, experimenting with the decay time makes a big difference."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lfos",
+      "title": "LFOs",
+      "theme": "theme-c",
+      "subtitle": "Change that repeats",
+      "pages": [
+        {
+          "id": "change-that-repeats",
+          "name": "Change that repeats",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Change that repeats"
+            },
+            {
+              "metadata": {},
+              "markdown": "Imagine you’re facing a spinning playground carousel with a speaker on it."
+            },
+            {
+              "metadata": {
+                "embed": "carousel",
+                "preset": "carousel-start",
+                "maxFrequency": 1,
+                "tooltipKey": "common:tooltips.drag"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "caption centered"
+              },
+              "markdown": "Listen to how the sound changes slower or faster as you drag to the left or right."
+            },
+            {
+              "metadata": {},
+              "markdown": "As the carousel spins, the front of the speaker moves towards you and away from you again, and you hear the sound getting louder and quieter accordingly — the amplitude is being modulated."
+            },
+            {
+              "metadata": {
+                "relatedTerms": [
+                  "oscillator"
+                ]
+              },
+              "markdown": "This repeating, back-and-forth change is called oscillation. Instead of envelopes, synthesizers use *oscillators* to create this kind of modulation."
+            }
+          ]
+        },
+        {
+          "id": "modulating-pitch-with-oscillators",
+          "name": "Modulating pitch with oscillators",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Modulating pitch with oscillators"
+            },
+            {
+              "metadata": {},
+              "markdown": "These oscillators are called *low-frequency oscillators* (or *LFOs*) because they move relatively slowly compared to the *audio oscillators* we’ll discuss later. You can think of LFOs as robots that make a repeating change to some aspect of the sound."
+            },
+            {
+              "metadata": {
+                "classes": "centered"
+              },
+              "markdown": "In this example, a low-frequency oscillator is modulating the pitch."
+            },
+            {
+              "metadata": {
+                "embed": "modbot",
+                "preset": "pitch-modbot-lfo",
+                "tooltipKey": "lesson-visualizations:labels.pressAndHold"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "This LFO modulates the pitch with a constant speed and shape. Next we’ll learn how to change the speed and shape to create different musical effects."
+            }
+          ]
+        },
+        {
+          "id": "changing-the-oscillators-speed",
+          "name": "Changing the oscillator’s speed",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Changing the oscillator’s speed"
+            },
+            {
+              "metadata": {},
+              "markdown": "Try adjusting the *rate* — how quickly the LFO moves back and forth. Listen to what happens to the affected aspect of sound (in this case, pitch)."
+            },
+            {
+              "metadata": {
+                "embed": "synth-slider",
+                "parameter": {
+                  "name": "lfo_frequency",
+                  "min": 1,
+                  "max": 5
+                },
+                "preset": "pitch-modulation-lfo",
+                "visualization": "lfo-diagram",
+                "labels": true
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to how the pitch changes slower or faster as you drag to the left or right."
+            },
+            {
+              "metadata": {
+                "relatedTerms": [
+                  "hertz",
+                  "oscillator"
+                ]
+              },
+              "markdown": "The number tells you the LFO’s *frequency* — how many times the oscillator moves from its highest point to its lowest and back in one second."
+            },
+            {
+              "metadata": {},
+              "markdown": "Frequency is measured in a unit called *hertz* (abbreviated Hz). A frequency of one hertz means that a full oscillation (or *cycle*) happens once per second."
+            }
+          ]
+        },
+        {
+          "id": "changing-the-modulation-amount",
+          "name": "Changing the modulation amount",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Changing the modulation amount"
+            },
+            {
+              "metadata": {},
+              "markdown": "Now try adjusting the *amount*. This determines how much influence the LFO’s movements have on the pitch."
+            },
+            {
+              "metadata": {
+                "embed": "synth-slider",
+                "parameter": {
+                  "name": "oscillator_pitch_offset_lfo_amount",
+                  "min": 0,
+                  "max": 48
+                },
+                "preset": "pitch-modulation-lfo",
+                "note": 64,
+                "visualization": "lfo-diagram",
+                "labels": true,
+                "initialPercent": 0.75
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to how the pitch changes more or less as you drag to the right or left."
+            },
+            {
+              "metadata": {},
+              "markdown": "Here, the number tells you how much the pitch will change in *semitones*. (A semitone is the difference in pitch between one key and the next on a piano.) The highest value (48 st) means 48 semitones above and below the central pitch (or a total of eight octaves)."
+            }
+          ]
+        },
+        {
+          "id": "changing-the-modulation-shape",
+          "name": "Changing the modulation “shape”",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Changing the modulation “shape”"
+            },
+            {
+              "metadata": {},
+              "markdown": "So far, our LFO has always moved smoothly back and forth between high and low. The specific shape of this motion — a bit like a rolling hill — is referred to as a *sine wave.*"
+            },
+            {
+              "metadata": {
+                "relatedTerms": [
+                  "waveform"
+                ]
+              },
+              "markdown": "But changing the LFO’s shape (or *waveform*) can completely change the character of the modulation."
+            },
+            {
+              "metadata": {},
+              "markdown": "Try some of these shapes and listen to how they affect the pitch:"
+            },
+            {
+              "metadata": {
+                "embed": "synth-xy",
+                "xParameter": {
+                  "name": "lfo_shape",
+                  "min": 0,
+                  "max": 2
+                },
+                "preset": "lfo-shapes",
+                "visualization": "lfo-wave-shapes",
+                "controls": "none",
+                "easing": 0
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Press to hear different modulation shapes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oscillators",
+      "title": "Oscillators",
+      "theme": "theme-d",
+      "subtitle": "How synths make sound",
+      "pages": [
+        {
+          "id": "how-synths-make-sound",
+          "name": "How synths make sound",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# How synths make sound"
+            },
+            {
+              "metadata": {},
+              "markdown": "So far we’ve learned a lot about how to change sounds on a synthesizer, but how does it make sound in the first place?"
+            },
+            {
+              "metadata": {},
+              "markdown": "Imagine a buzzing bee. The tone we hear is caused by the bee flapping its wings quickly."
+            },
+            {
+              "metadata": {
+                "embed": "synth-slider",
+                "parameter": [
+                  {
+                    "name": "lfo_frequency",
+                    "min": 1,
+                    "max": 500
+                  },
+                  {
+                    "name": "oscillator_pitch_offset",
+                    "min": -48,
+                    "max": 0
+                  },
+                  {
+                    "name": "oscillator_pulse_amplitude",
+                    "min": 0,
+                    "max": 1
+                  },
+                  {
+                    "name": "oscillator_saw_amplitude",
+                    "min": 0,
+                    "max": 1
+                  },
+                  {
+                    "name": "oscillator_pulse_width",
+                    "min": 1,
+                    "max": 0
+                  },
+                  {
+                    "name": "amplitude_lfo_amount",
+                    "min": 1,
+                    "max": 0
+                  },
+                  {
+                    "name": "oscillator_noise_amplitude",
+                    "min": 0,
+                    "max": 0
+                  },
+                  {
+                    "name": "filter_lfo_amount",
+                    "min": 0.01,
+                    "max": 0
+                  },
+                  {
+                    "name": "amplitude",
+                    "min": 0,
+                    "max": 1
+                  }
+                ],
+                "visualization": "buzzing-bee",
+                "preset": "bee",
+                "note": 48,
+                "initialPercent": 0
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen for the buzzing tone as you drag to the right."
+            },
+            {
+              "metadata": {
+                "relatedTerms": [
+                  "audio rate"
+                ]
+              },
+              "markdown": "When the flapping is fast enough it will start to produce a low tone. In general, we start to hear a tone when something oscillates faster than around 20 Hz."
+            },
+            {
+              "metadata": {},
+              "markdown": "Most synths generate tones with *audio oscillators*. These are similar to the *low-frequency oscillators* used for modulation, but they move much faster so they can produce tones directly."
+            }
+          ]
+        },
+        {
+          "id": "waveforms-you-can-hear",
+          "name": "Waveforms you can hear",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Waveforms you can hear"
+            },
+            {
+              "metadata": {},
+              "markdown": "Like LFOs, audio oscillators can produce different shapes. Listen to the difference between the *square* (on the left) and *sawtooth* (on the right). You can also mix the two wave shapes by dragging through the middle."
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "osc-shapes",
+                "showResetButton": "no",
+                "notes": "c",
+                "sequence": "\\tempo 4 = 90 e16 c b8 c16 e b,32. d fs a, cs'8 b,16 g, g fs b, a16 c d'8  c16 e b,32. d fs a, cs'8 b,16 g, g fs b,\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "xy",
+                "visualization": "osc-shape-mix",
+                "rotation": 0,
+                "tooltipKey": "common:tooltips.drag",
+                "initialX": 0.23,
+                "initialY": 0.26,
+                "xParameter": [
+                  {
+                    "name": "oscillator_pulse_amplitude",
+                    "breakpoints": [
+                      {
+                        "pct": 0,
+                        "value": 1
+                      },
+                      {
+                        "pct": 0.33,
+                        "value": 1
+                      },
+                      {
+                        "pct": 0.66,
+                        "value": 0
+                      },
+                      {
+                        "pct": 1,
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "oscillator_saw_amplitude",
+                    "breakpoints": [
+                      {
+                        "pct": 0,
+                        "value": 0
+                      },
+                      {
+                        "pct": 0.33,
+                        "value": 0
+                      },
+                      {
+                        "pct": 0.66,
+                        "value": 1
+                      },
+                      {
+                        "pct": 1,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "yParameter": [
+                  {
+                    "name": "amplitude",
+                    "breakpoints": [
+                      {
+                        "pct": 0,
+                        "value": 0
+                      },
+                      {
+                        "pct": 1,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Drag left for square and right for sawtooth; drag up and down to change the amplitude."
+            },
+            {
+              "metadata": {
+                "relatedTerms": [
+                  "timbre"
+                ]
+              },
+              "markdown": "Square and sawtooth (or *saw*) are two common shapes used in audio oscillators. Changing the oscillator’s wave shape changes the character or *timbre* of the sound. People often describe square waves as “woody” or “hollow” and saw waves as “buzzy” or “bright.”"
+            },
+            {
+              "metadata": {},
+              "markdown": "The height of the wave corresponds to its amplitude, which affects its loudness but not its timbre. If you drag all the way to the bottom, the amplitude is zero, and the waveform is silent."
+            }
+          ]
+        },
+        {
+          "id": "pulse-width",
+          "name": "Pulse width",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Pulse width"
+            },
+            {
+              "metadata": {},
+              "markdown": "Some oscillators produce a fixed shape, but other oscillators have controls that allow that shape to change."
+            },
+            {
+              "metadata": {},
+              "markdown": "You can change the square oscillator’s timbre by changing its *pulse width*: the amount of time the oscillator spends in the high and low part of its cycle."
+            },
+            {
+              "metadata": {
+                "embed": "synth-slider",
+                "parameter": {
+                  "name": "oscillator_pulse_width"
+                },
+                "visualization": "pulse-width",
+                "tooltipKey": "common:tooltips.drag"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Listen to how the sound changes as you drag to change the pulse width."
+            },
+            {
+              "metadata": {},
+              "markdown": "The wave has its “fullest” sound at the center, where the waveform is symmetrical."
+            }
+          ]
+        },
+        {
+          "id": "modulating-pulse-width",
+          "name": "Modulating pulse width",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Modulating pulse width"
+            },
+            {
+              "metadata": {},
+              "markdown": "You can also modulate the square oscillator’s pulse width with an LFO:"
+            },
+            {
+              "metadata": {
+                "embed": "synth-slider",
+                "parameter": {
+                  "name": "oscillator_pulse_width_lfo_amount",
+                  "min": 0
+                },
+                "preset": "pwmlfo",
+                "visualization": "lfo-diagram",
+                "tooltipKey": "common:tooltips.drag"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Drag to change how much the LFO modulates the pulse width."
+            },
+            {
+              "metadata": {},
+              "markdown": "Listen for the “full” square sound in the middle and the “pinched” pulse sound at the top and bottom of the modulation curve. (This is just like moving the slider to the left and right on the previous page.)"
+            }
+          ]
+        },
+        {
+          "id": "fast-modulation",
+          "name": "Fast modulation",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Fast modulation"
+            },
+            {
+              "metadata": {},
+              "markdown": "We’ve learned that we hear interesting changes as oscillators move from lower to higher frequencies."
+            },
+            {
+              "metadata": {},
+              "markdown": "Similarly, we hear interesting changes as modulators become very fast. In this example, an LFO is modulating pitch."
+            },
+            {
+              "metadata": {
+                "embed": "synth-xy",
+                "yParameter": {
+                  "name": "oscillator_pitch_offset_lfo_amount",
+                  "min": 1,
+                  "max": 48
+                },
+                "xParameter": {
+                  "name": "lfo_frequency"
+                },
+                "tooltipKey": "common:tooltips.drag",
+                "rotation": 7.5,
+                "visualization": "fast-lfo"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "centered caption"
+              },
+              "markdown": "Drag right or left to make the LFO go faster or slower. Drag up or down to increase or decrease the LFO amount."
+            },
+            {
+              "metadata": {},
+              "markdown": "Notice that as the LFO gets faster, the individual cycles of the LFO start to sound like they’re “blurring” together. The changes in pitch start to sound like changes in timbre, resulting in a “harsh” or “metallic” sound."
+            },
+            {
+              "metadata": {},
+              "markdown": "This is an important sound design discovery: slow modulations are usually perceived as changes to behavior (changes that are applied to the sound), while fast modulations are usually perceived as changes to timbre (changes to the character of the sound itself)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filters",
+      "title": "Filters",
+      "theme": "theme-f",
+      "subtitle": "Sculpting the sound",
+      "pages": [
+        {
+          "id": "filters-in-the-real-world",
+          "name": "Filters in the real world",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Filters in the real world"
+            },
+            {
+              "metadata": {
+                "relatedTerms": [
+                  "filter"
+                ]
+              },
+              "markdown": "Imagine there’s music playing in the next room. If the music is loud enough, you can hear it through the wall, but it usually sounds “muffled” or “dull.” This is because the wall is acting as a *filter*. It blocks the *high frequencies* but lets the *low frequencies* through."
+            },
+            {
+              "metadata": {
+                "embed": "door-filter",
+                "sample": "door-filter-loop",
+                "tooltipKey": "common:tooltips.drag"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "caption centered"
+              },
+              "markdown": "As you open the door, the sound becomes “brighter” as the high frequencies come back."
+            }
+          ]
+        },
+        {
+          "id": "filters-in-synthesizers",
+          "name": "Filters in synthesizers",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Filters in synthesizers"
+            },
+            {
+              "metadata": {},
+              "markdown": "A filter behaves a bit like a wall or door. It lets some parts of the sound through and makes other parts quieter. The filter below lets the lower parts of the sound through while blocking the higher parts."
+            },
+            {
+              "metadata": {
+                "embed": "synth-xy",
+                "xParameter": {
+                  "name": "filter_frequency"
+                },
+                "visualization": "low-pass-no-resonance",
+                "tooltipKey": "common:tooltips.drag"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "caption right"
+              },
+              "markdown": "Drag left or right to close or open the filter."
+            },
+            {
+              "metadata": {
+                "classes": "left",
+                "relatedTerms": [
+                  "cutoff"
+                ]
+              },
+              "markdown": "Dragging adjusts the *cutoff frequency* of the filter. In this case, the filter is removing high frequencies. This type of filter is called a *low-pass filter* (it passes low frequencies and cuts high frequencies)."
+            },
+            {
+              "metadata": {
+                "classes": "right"
+              },
+              "markdown": "More high frequencies make a sound “brighter.” Less high frequencies make it “darker.”"
+            },
+            {
+              "metadata": {},
+              "markdown": "As you adjust the cutoff frequency slowly, you’ll probably recognize this effect. The sound of a filter being “swept” open or closed is [a classic technique](https://www.youtube.com/watch?v=RrU2DThhsZI&t=145) in many kinds of music."
+            }
+          ]
+        },
+        {
+          "id": "filter-resonance",
+          "name": "Filter resonance",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Filter resonance"
+            },
+            {
+              "metadata": {
+                "relatedTerms": [
+                  "resonance"
+                ]
+              },
+              "markdown": "Filters often have another control, called *resonance*, that increases the amplitude around the cutoff frequency. Filter sweeps take on a very different character with different resonance settings."
+            },
+            {
+              "metadata": {
+                "embed": "synth-xy",
+                "xParameter": {
+                  "name": "filter_frequency"
+                },
+                "yParameter": {
+                  "name": "filter_resonance"
+                },
+                "tooltipKey": "common:tooltips.drag",
+                "visualization": "low-pass-with-resonance"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "caption left"
+              },
+              "markdown": "Drag left or right to close or open the filter. Drag up and down to change the filter’s resonance."
+            },
+            {
+              "metadata": {
+                "classes": "right highlighted"
+              },
+              "markdown": "Notice that high resonance values create a kind of high “whistling” sound. With the resonance at a high value, try adjusting the cutoff and hear how this whistling sound changes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipes",
+      "title": "Recipes",
+      "theme": "theme-mono",
+      "subtitle": "Making sounds",
+      "pages": [
+        {
+          "id": "get-to-know-this-synth",
+          "name": "Get to know this synth",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Get to know this synth"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "long-piano",
+                "tooltip": "notes",
+                "notes": "c df d ef e f gf g af a bf b c'",
+                "sequence": "\\tempo 4 = 108  d16 g a c d' f' f bf c' d'' c''\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "classes": "right"
+              },
+              "markdown": "Now that you’ve learned a bit about synthesizers, we’ll combine the various parts of the synth together and learn to make complete sounds."
+            },
+            {
+              "metadata": {
+                "classes": "left"
+              },
+              "markdown": "We’ll also introduce a new way of showing the controls, which is closer to the way you might find them in a typical synth. Related controls are grouped together in panels like this:"
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "slider",
+                  "finetune",
+                  "noticedot",
+                  "lfo",
+                  "reset"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "slider"
+              },
+              "markdown": "Drag a slider left or right to change the corresponding aspect of the sound."
+            },
+            {
+              "metadata": {
+                "footloose": "finetune"
+              },
+              "markdown": "To make very small changes, drag a slider upwards and then left or right."
+            },
+            {
+              "metadata": {
+                "footloose": "noticedot"
+              },
+              "markdown": "Notice the little dot over the [frequency](highlight-param/filter_frequency) slider? This shows the effect of any LFO or envelope modulation."
+            },
+            {
+              "metadata": {
+                "footloose": "lfo"
+              },
+              "markdown": "Try adjusting the [LFO](highlight-param/filter_lfo_amount) or [envelope](highlight-param/filter_envelope_amount) amounts and see how the dot responds."
+            },
+            {
+              "metadata": {
+                "footloose": "reset"
+              },
+              "markdown": "If you’ve changed any controls, you’ll see a Reset button at the bottom right of the page. Feel free to experiment — you can always get back to where you started!"
+            },
+            {
+              "metadata": {
+                "classes": "highlighted center"
+              },
+              "markdown": "Note: the following pages have sequencer buttons, and you can also play notes using a computer keyboard. Alternatively, if you’re using the Chrome browser, you can connect a MIDI controller to play notes."
+            }
+          ]
+        },
+        {
+          "id": "plucked-bass",
+          "name": "Plucked bass",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Plucked bass"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "pluckedbass",
+                "tooltip": "sequence",
+                "notes": "d f a a' d' f a",
+                "sequence": "\\tempo 4 = 92 d,8.    f,16  a, a, r d,8    f,16  a, a a, f16 c8  // r8  hh  r  hh  r  hh                 r                   hh    // bd4     bd     bd    bd8.               bd16 // r4      sn     r     sn\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "We’ll start with a synth sound suitable for basslines of [all kinds](https://www.youtube.com/watch?v=oWpGRp2gtng&t=63)."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "amplitude-envelope",
+                "texts": [
+                  "ampenv",
+                  "amptweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "ampenv"
+              },
+              "markdown": "Press and hold a slider to play a note. Notice that the note fades away after a while. This is done by setting the amplitude envelope’s [sustain](highlight-param/amplitude_envelope_sustain) to 0 and adjusting the [decay](highlight-param/amplitude_envelope_decay) time."
+            },
+            {
+              "metadata": {
+                "footloose": "amptweaks"
+              },
+              "markdown": "Try different decay times and listen to the fade change."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filtermod",
+                  "cutoff",
+                  "cutoffsuggestions",
+                  "modamount"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filtermod"
+              },
+              "markdown": "The “plucked” character of this sound is caused by a filter modulated by an envelope. This causes the filter to quickly open and then quickly close again."
+            },
+            {
+              "metadata": {
+                "footloose": "cutoff"
+              },
+              "markdown": "First, we’ve lowered the starting [cutoff frequency](highlight-param/filter_frequency) and the [filter resonance](highlight-param/filter_resonance)."
+            },
+            {
+              "metadata": {
+                "footloose": "cutoffsuggestions"
+              },
+              "markdown": "Try changing the frequency just a little bit and listen to how this affects the brightness."
+            },
+            {
+              "metadata": {
+                "footloose": "modamount"
+              },
+              "markdown": "We’ve also turned up the envelope’s [modulation amount](highlight-param/filter_envelope_amount). Higher values mean that the filter opens further (resulting in a brighter sound)."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "modenvtweaks",
+                  "decaysuggestion"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "modenvtweaks"
+              },
+              "markdown": "We’ve set the modulation envelope’s controls so that it moves faster (and sounds “pluckier”)."
+            },
+            {
+              "metadata": {
+                "footloose": "decaysuggestion"
+              },
+              "markdown": "Try adjusting the envelope’s [decay time](highlight-param/modulation_envelope_decay). Very fast speeds can result in a sort of percussive “snap” sound as the filter closes quickly."
+            },
+            {
+              "metadata": {},
+              "markdown": "Tweak everything and see what sorts of interesting variations you can find. Tiny changes to just one control at a time can cause a huge change in sound."
+            }
+          ]
+        },
+        {
+          "id": "west-coast-lead",
+          "name": "West Coast lead",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# West Coast lead"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "west-coast-lead",
+                "tooltip": "notes",
+                "notes": "c''4 c'''4 bf'' af'' g'' af'' f'' g'' f''g'' af'' g'' f'' af' g'",
+                "sequence": "\\tempo 4 =88\n c''4 bf'' g'' f'' | r4 r8 f''16 g'' af''8 g''16 r16 f''16 af'8. //\n r8 c'''4 af'' af'' g''2 r2 g'8  //\n hh4/7 r r r hh r r hh4/7 r r r hh r r hh4/7 r r r hh r r hh4/7 r r r hh r r | hh4/7 r r r hh r r hh4/7 r r r hh r r hh4/7 r r r hh r r hh4/7 r r r hh r r //\n r4 sn r sn | r sn r sn //\n bd4 r bd r | bd4 r bd r4/7 r r r bd r r\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "This sound is inspired by [classic West Coast hip hop](https://www.youtube.com/watch?v=mpkZ2_xlZLo), and is great for long melodic lines."
+            },
+            {
+              "metadata": {},
+              "markdown": "The secret to this sound is that some notes *glide* smoothly to the next note, rather than changing pitch abruptly."
+            },
+            {
+              "metadata": {},
+              "markdown": "Some of the notes in the sequence aren’t released until after the next note begins. In these cases, the last note’s pitch will glide to the new note’s pitch. This type of smooth, connected playing is called *legato*."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "glide"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "glide"
+              },
+              "markdown": "With the sequence playing, try adjusting the [glide time](highlight-param/glide_time) and listen to the difference as it gets faster or slower."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "saw-oscillator",
+                "texts": [
+                  "saw"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "saw"
+              },
+              "markdown": "We’ve used the saw oscillator for this sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pulse-oscillator",
+                "texts": [
+                  "square"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "square"
+              },
+              "markdown": "Try blending the two oscillators and adjusting their various controls to see what kinds of variations you can discover."
+            }
+          ]
+        },
+        {
+          "id": "wow-bass",
+          "name": "“Wow” bass",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# “Wow” bass"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "wowbass",
+                "tooltip": "sequence",
+                "notes": "d f a a' d' f a",
+                "sequence": "\\tempo 4 = 102\n r8 c,8.    c, c, c,8  bf16 c' //\nr8  hh  r  hh  r  hh                 r                   hh    // bd4     bd     bd    bd // r4      sn     r     sn\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "For this [classic bass sound](https://www.youtube.com/watch?v=UbkqE4fpvdI), we’ve used a slower filter envelope to make the synth sound like it’s talking."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "recipe1",
+                  "recipe2"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "recipe1"
+              },
+              "markdown": "We’ve turned the filter’s [resonance](highlight-param/filter_resonance) up and the [frequency](highlight-param/filter_frequency) down, while applying a bit of [envelope](highlight-param/filter_envelope_amount)."
+            },
+            {
+              "metadata": {
+                "footloose": "recipe2"
+              },
+              "markdown": "Play with different settings for these controls and see how they affect the sound. With a higher cutoff, the sound gets more “squelchy.”"
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "recipe3",
+                  "recipe4"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "recipe3"
+              },
+              "markdown": "We’ve set the modulation envelope’s [sustain](highlight-param/modulation_envelope_sustain) to 0 so that the filter cutoff ends where it started."
+            },
+            {
+              "metadata": {
+                "footloose": "recipe4"
+              },
+              "markdown": "Trying experimenting with different settings for the envelope."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "saw-oscillator",
+                "texts": [
+                  "saw"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "saw"
+              },
+              "markdown": "Finally, we’ve used the saw oscillator instead of the square."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pulse-oscillator",
+                "texts": [
+                  "square"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "square"
+              },
+              "markdown": "Try blending the two oscillators and adjusting their various controls to see what kinds of variations you can find."
+            }
+          ]
+        },
+        {
+          "id": "american-siren",
+          "name": "American siren",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# American siren"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "american-siren",
+                "tooltip": "notes",
+                "notes": "a'",
+                "sequence": "\\tempo 4 = 5  a' r32\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "Synths are great for making siren sounds. We’ll start with an American police siren and then on the next page, we’ll change a few controls to turn it into a German one."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "lfo",
+                "texts": [
+                  "lfofreq"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "lfofreq"
+              },
+              "markdown": "The most noticeable thing about this sound is the repeating pitch change. This is done with an LFO modulating pitch. Try playing with the LFO [frequency](highlight-param/lfo_frequency)."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "lfoamount"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "lfoamount"
+              },
+              "markdown": "Play with the LFO [amount](highlight-param/oscillator_pitch_offset_lfo_amount) and hear how this changes the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "doppler",
+                  "envtweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "doppler"
+              },
+              "markdown": "You might have noticed that the pitch of a siren goes up a bit as it comes towards you, then down a bit as it goes away again. This phenomenon is called *Doppler shift*. We’ve used a very slow envelope to imitate this effect."
+            },
+            {
+              "metadata": {
+                "footloose": "envtweaks"
+              },
+              "markdown": "Try playing with the envelope controls."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filterenv"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filterenv"
+              },
+              "markdown": "To make the Doppler shift more realistic, we’ve also used the [envelope](highlight-param/filter_envelope_amount) to (subtly) modulate the filter [cutoff](highlight-param/filter_frequency)."
+            }
+          ]
+        },
+        {
+          "id": "german-siren",
+          "name": "German siren",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# German siren"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "american-siren",
+                "tooltip": "notes",
+                "notes": "a'",
+                "sequence": "\\tempo 4 = 5  a' r32\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "With just a few changes, we can morph the American siren into a German one."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "lfo",
+                "texts": [
+                  "lfofreq"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "lfofreq"
+              },
+              "markdown": "Slow the LFO [frequency](highlight-param/lfo_frequency) down to around .7 Hz. Then change the LFO [shape](highlight-param/lfo_shape) from sine to square."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "lfopitch",
+                  "finetune"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "lfopitch"
+              },
+              "markdown": "Now change the pitch LFO [amount](highlight-param/oscillator_pitch_offset_lfo_amount) from 12 semitones to around 2.5."
+            },
+            {
+              "metadata": {
+                "footloose": "finetune"
+              },
+              "markdown": "Hint: dragging *up* on a slider enables fine tuning."
+            },
+            {
+              "metadata": {},
+              "markdown": "Try playing with all the controls and see what kinds of different siren variations you can find."
+            }
+          ]
+        },
+        {
+          "id": "lasers",
+          "name": "Lasers",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Lasers"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "laser",
+                "tooltip": "notes",
+                "notes": "a,,",
+                "sequence": "\\tempo 4 = 120  a,,4 a,, a,, a,,\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "This synth is great for making classic B-movie laser sounds, and also for punchy electronic kick drums. In fact, these are almost the same sound! We’ll start with the laser and then on the next page change just a few controls to get a kick."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "pitchenv"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "pitchenv"
+              },
+              "markdown": "To start, we’ve set the pitch envelope [amount](highlight-param/oscillator_pitch_offset_envelope_amount) to 48 semitones."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "modenv"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "modenv"
+              },
+              "markdown": "This is a dramatic pitch change, but we’ve refined it by changing the envelope’s controls."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "amplitude-envelope",
+                "texts": [
+                  "ampenv"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "ampenv"
+              },
+              "markdown": "To make the sound stop right when the pitch reaches the bottom, we’ve set the amplitude envelope to the same values as the modulation envelope."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filter"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filter"
+              },
+              "markdown": "Finally, we’ve used the modulation envelope to move the filter [cutoff](highlight-param/filter_frequency), so the brightness changes along with the pitch."
+            }
+          ]
+        },
+        {
+          "id": "kick-drums",
+          "name": "Kick drums",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Kick drums"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "laser",
+                "tooltip": "notes",
+                "notes": "a,,",
+                "sequence": "\\tempo 4 = 133  f,,4 f,, f,, f,,\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "We can turn our laser into a [punchy electronic kick sound](https://www.youtube.com/watch?v=BK744ctoSj0) by changing just a few controls."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "modenv",
+                  "finehint",
+                  "smack"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "modenv"
+              },
+              "markdown": "Make the modulation envelope move much faster by changing both the [decay](highlight-param/modulation_envelope_decay) and [release](highlight-param/modulation_envelope_release) to around 75 ms."
+            },
+            {
+              "metadata": {
+                "footloose": "finehint"
+              },
+              "markdown": "(Reminder: dragging *up* on a slider enables fine tuning.)"
+            },
+            {
+              "metadata": {
+                "footloose": "smack"
+              },
+              "markdown": "This causes a “smacking” sound as the pitch and filter move quickly from high to low."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "amplitude-envelope",
+                "texts": [
+                  "amp",
+                  "explanation"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "amp"
+              },
+              "markdown": "Make the amplitude envelope move slower by increasing the [decay](highlight-param/amplitude_envelope_decay) and [release](highlight-param/amplitude_envelope_release) to about 2.5 seconds."
+            },
+            {
+              "metadata": {
+                "footloose": "explanation"
+              },
+              "markdown": "The slower envelope makes the sound last a bit longer. Unlike the laser, we want this sound to keep going after the pitch and filter have reached the bottom."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "pitchamount",
+                  "hint"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "pitchamount"
+              },
+              "markdown": "Now make the pitch change less dramatic by reducing the [envelope amount](highlight-param/oscillator_pitch_offset_envelope_amount) to around 22 steps."
+            },
+            {
+              "metadata": {
+                "footloose": "hint"
+              },
+              "markdown": "Try different amount values and see how this affects the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filteramount"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filteramount"
+              },
+              "markdown": "Make the filter a bit more subtle by reducing the [envelope amount](highlight-param/filter_envelope_amount) to around 50% and the [cutoff](highlight-param/filter_frequency) to around 100 Hz."
+            },
+            {
+              "metadata": {},
+              "markdown": "Play with all of the controls and see what kinds of different sounds you can find."
+            }
+          ]
+        },
+        {
+          "id": "subbass",
+          "name": "Subbass",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Subbass"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "subbass",
+                "tooltip": "notes",
+                "notes": "e g",
+                "sequence": "\\tempo 4 = 64  a8. a8 a16 a16 r16 r8. a8 e'16 d'8 // r4 a'8 r8 r4 a'8 d'8\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "Here’s an [aggressive bass sound](https://www.youtube.com/watch?v=PEGccV-NOm8) inspired by trap and hip hop (but that could also work well in many other styles)."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filterenv",
+                  "cutoff"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filterenv"
+              },
+              "markdown": "To start, we’ve applied some [envelope](highlight-param/filter_envelope_amount) modulation to the filter, adding a prominent “thump” at the beginning of the non-legato notes."
+            },
+            {
+              "metadata": {
+                "footloose": "cutoff"
+              },
+              "markdown": "We’ve also turned the [cutoff](highlight-param/filter_frequency) down and the [resonance](highlight-param/filter_resonance) up to make the motion more dramatic."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "modenv"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "modenv"
+              },
+              "markdown": "The thump works because the envelope moves pretty quickly."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pulse-oscillator",
+                "texts": [
+                  "squarevol"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "squarevol"
+              },
+              "markdown": "Next, we’ve set the square’s [amplitude](highlight-param/oscillator_pulse_amplitude) to 70%."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "saw-oscillator",
+                "texts": [
+                  "sawvol",
+                  "detune",
+                  "detunedetail",
+                  "detunetweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "sawvol"
+              },
+              "markdown": "And we’ve also set the saw’s [amplitude](highlight-param/oscillator_saw_amplitude) to 70%."
+            },
+            {
+              "metadata": {
+                "footloose": "detune"
+              },
+              "markdown": "Then we’ve *detuned* the saw."
+            },
+            {
+              "metadata": {
+                "footloose": "detunedetail"
+              },
+              "markdown": "The [Coarse](highlight-param/oscillator_saw_detune_coarse) detuning sets the saw an octave below the square, but the [Fine](highlight-param/oscillator_saw_detune_fine) tuning sets it a tiny bit higher: 5 *cents* (a cent is 100th of a semitone). This tiny offset from a perfect octave creates a rich, “swirling” sound."
+            },
+            {
+              "metadata": {
+                "footloose": "detunetweaks"
+              },
+              "markdown": "Trying playing with different coarse and fine detune values and see how this affects the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "pitchmod",
+                  "globaltune"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "pitchmod"
+              },
+              "markdown": "Finally, we’ve added even more thump by applying the modulation [envelope](highlight-param/oscillator_pitch_offset_envelope_amount) to the overall pitch."
+            },
+            {
+              "metadata": {
+                "footloose": "globaltune"
+              },
+              "markdown": "Note that we’ve also tuned the [Pitch Offset](highlight-param/oscillator_pitch_offset) down to -12 (one octave)."
+            }
+          ]
+        },
+        {
+          "id": "old-fashioned-computer",
+          "name": "Old-fashioned computer",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Old-fashioned computer"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "old-fashioned-computer",
+                "tooltip": "notes",
+                "notes": "c",
+                "sequence": "\\tempo 4 = 10  c'4\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "We can make more classic movie sound effects, like this retro-futuristic sci-fi computer sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "lfo",
+                "texts": [
+                  "lfoshape",
+                  "lfotweaks",
+                  "variouslfos"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "lfoshape"
+              },
+              "markdown": "The key to this sound is a relatively fast LFO with the [shape](highlight-param/lfo_shape) set to *sample-and-hold*. This is similar to the square wave in that it moves between steady levels, but each new level is at a different, random value."
+            },
+            {
+              "metadata": {
+                "footloose": "lfotweaks"
+              },
+              "markdown": "Try switching between LFO shapes to hear how this changes the sound."
+            },
+            {
+              "metadata": {
+                "footloose": "variouslfos"
+              },
+              "markdown": "We’ve set the [frequency](highlight-param/lfo_frequency) to about 12 Hz. Then we’ve used the LFO to modulate additional aspects of the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "pitchtweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "pitchtweaks"
+              },
+              "markdown": "Try different pitch LFO [amounts](highlight-param/oscillator_pitch_offset_lfo_amount) to change the “intensity” of the computer."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "cutoff",
+                  "filtertweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "cutoff"
+              },
+              "markdown": "We’ve also set the LFO to modulate the filter cutoff."
+            },
+            {
+              "metadata": {
+                "footloose": "filtertweaks"
+              },
+              "markdown": "Try playing with the [frequency](highlight-param/filter_frequency), [resonance](highlight-param/filter_resonance), and LFO [amount](highlight-param/filter_lfo_amount) values to experiment with the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "amplitude",
+                "texts": [
+                  "amp",
+                  "lfoamp"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "amp"
+              },
+              "markdown": "We’ve also used the LFO to modulate the overall [amplitude](highlight-param/amplitude), causing higher pitches to be slightly louder than quieter ones."
+            },
+            {
+              "metadata": {
+                "footloose": "lfoamp"
+              },
+              "markdown": "Play with the LFO [amount](highlight-param/amplitude_lfo_amount) to see how this changes the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "noise",
+                "texts": [
+                  "noise"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "noise"
+              },
+              "markdown": "In addition to audio oscillators that make pitched sounds, our synth also has a *noise generator* which makes an unpitched sound. By itself, noise can be used to simulate wind or rain. Here, we’re using it to add a touch of “dirt” or “roughness.”"
+            }
+          ]
+        },
+        {
+          "id": "hihat",
+          "name": "Hihat",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Hihat"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "hihat",
+                "tooltip": "sequence",
+                "notes": "bf e ef ef,",
+                "sequence": "\\tempo 4 = 120 bf16 bf bf bf  bf32 bf bf16 bf bf   bf bf bf bf   bf bf bf32 bf bf bf\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "This simple hihat sound uses *only* noise; both oscillators are turned all the way down."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "modenv",
+                  "modtweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "modenv"
+              },
+              "markdown": "The key to this sound is the very fast envelope modulating the filter. We’ve set the [sustain](highlight-param/modulation_envelope_sustain) to 0 and set fast [attack](highlight-param/modulation_envelope_attack) and [decay](highlight-param/modulation_envelope_decay) times."
+            },
+            {
+              "metadata": {
+                "footloose": "modtweaks"
+              },
+              "markdown": "Try playing with different decay values to hear how this changes the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filter",
+                  "filterlfo",
+                  "lfohint"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filter"
+              },
+              "markdown": "Next, we’ve turned the filter [frequency](highlight-param/filter_frequency) all the way down and set the [envelope amount](highlight-param/filter_envelope_amount) to 100%."
+            },
+            {
+              "metadata": {
+                "footloose": "filterlfo"
+              },
+              "markdown": "We’ve also applied a tiny bit of [LFO](highlight-param/filter_lfo_amount) modulation. This creates a bit of random motion with each new note."
+            },
+            {
+              "metadata": {
+                "footloose": "lfohint"
+              },
+              "markdown": "Try playing with different LFO amounts and hear how this changes the randomness."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "lfo",
+                "texts": [
+                  "shape",
+                  "frequency",
+                  "hint"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "shape"
+              },
+              "markdown": "We’ve changed the LFO [shape](highlight-param/lfo_shape) to sample-and-hold to create the random behavior."
+            },
+            {
+              "metadata": {
+                "footloose": "frequency"
+              },
+              "markdown": "Finally, we’ve made the LFO [frequency](highlight-param/lfo_frequency) very slow to ensure that the changes are heard only once per note."
+            },
+            {
+              "metadata": {
+                "footloose": "hint"
+              },
+              "markdown": "Try higher frequencies (in conjunction with high filter LFO amounts) and listen to how this changes the sound."
+            },
+            {
+              "metadata": {},
+              "markdown": "## Other things to try"
+            },
+            {
+              "metadata": {},
+              "markdown": "[Real hihats](https://learningmusic.ableton.com/make-beats/what-are-these-sounds.html#closed-hat-and-open-hat) make a rich, metallic sound that’s more than just plain noise."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pulse-oscillator",
+                "texts": [
+                  "square"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "square"
+              },
+              "markdown": "Try [blending in](highlight-param/oscillator_pulse_amplitude) just a touch of the square wave and hear how this effects the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "pitch",
+                  "pitchtweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "pitch"
+              },
+              "markdown": "We’ve set the [pitch](highlight-param/oscillator_pitch_offset) of the synth extremely high, which is only audible when there’s some square mixed in."
+            },
+            {
+              "metadata": {
+                "footloose": "pitchtweaks"
+              },
+              "markdown": "Try different pitch settings — or a tiny bit of [LFO](highlight-param/oscillator_pitch_offset_lfo_amount) modulation — and listen to how this changes the sound."
+            }
+          ]
+        },
+        {
+          "id": "strings",
+          "name": "Strings",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Strings"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "strings",
+                "tooltip": "sequence",
+                "notes": "e g a",
+                "sequence": "\\tempo 4 = 60  e' g' a'8 r a'4 b' a' g' e' g'\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "Let’s look at a classic “string”-like sound, useful for melodic lines. This sound is a bit like a violin or cello, but has a synthetic character of its own."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "amplitude-envelope",
+                "texts": [
+                  "amp",
+                  "amptweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "amp"
+              },
+              "markdown": "Maybe the most noticeable aspect of the sound is the somewhat slow [attack](highlight-param/amplitude_envelope_attack) and [release](highlight-param/amplitude_envelope_release)."
+            },
+            {
+              "metadata": {
+                "footloose": "amptweaks"
+              },
+              "markdown": "Note that [sustain](highlight-param/amplitude_envelope_sustain) is at 100%, so [decay](highlight-param/amplitude_envelope_decay) has no effect. Experiment with these controls to see how they change the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filter",
+                  "resonance",
+                  "filtertweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filter"
+              },
+              "markdown": "As the amplitude increases, the timbre also changes. To do this, we’ve used the modulation [envelope](highlight-param/filter_envelope_amount) to open and close the filter (just a little!)."
+            },
+            {
+              "metadata": {
+                "footloose": "resonance"
+              },
+              "markdown": "We’ve also turned the filter [resonance](highlight-param/filter_resonance) down to 0. This makes the filter’s motion a bit more subtle."
+            },
+            {
+              "metadata": {
+                "footloose": "filtertweaks"
+              },
+              "markdown": "Try changing the filter controls and listen to the difference."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "modenv",
+                  "modtweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "modenv"
+              },
+              "markdown": "The timbre change happens a bit more slowly than the amplitude envelope."
+            },
+            {
+              "metadata": {
+                "footloose": "modtweaks"
+              },
+              "markdown": "See how the sound changes when you play with faster or slower times."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "vibrato"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "vibrato"
+              },
+              "markdown": "String players create a musical effect called *vibrato* by using an oscillating finger motion that causes small changes in pitch. We’ve created some subtle vibrato by setting a very small pitch LFO [amount](highlight-param/oscillator_pitch_offset_lfo_amount)."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pulse-oscillator",
+                "texts": [
+                  "square"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "square"
+              },
+              "markdown": "For this sound, we’ve [mixed in](highlight-param/oscillator_pulse_amplitude) some of the square."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "saw-oscillator",
+                "texts": [
+                  "saw",
+                  "osctweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "saw"
+              },
+              "markdown": "And we’ve [mixed in](highlight-param/oscillator_saw_amplitude) some of the saw."
+            },
+            {
+              "metadata": {
+                "footloose": "osctweaks"
+              },
+              "markdown": "Play with the mix between the oscillators and see how this affects the sound."
+            }
+          ]
+        },
+        {
+          "id": "noisy-lead",
+          "name": "Noisy lead",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Noisy lead"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "noisy-lead",
+                "tooltip": "sequence",
+                "notes": "bf e ef ef,",
+                "sequence": "\\tempo 4 = 128 ef8. ef,8. bf8. e16 ef ef, r16 ef8 ef'16 // r8 hh r8 hh r8 hh r8 hh // bd4 bd bd bd // r4 sn r sn\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "Here’s a bright, noisy sound with lots of energy and “sizzle.” This type of sound was popular in [some early 90’s dance music](https://www.youtube.com/watch?v=-dohzrXT09w), and is sometimes called a *Hoover* because of its similarity to the sound of a vacuum cleaner..."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filter"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filter"
+              },
+              "markdown": "To start, we’ve turned the filter [frequency](highlight-param/filter_frequency) all the way up and [resonance](highlight-param/filter_resonance) all the way down, so filter has no effect on the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "saw-oscillator",
+                "texts": [
+                  "sawvol",
+                  "detune"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "sawvol"
+              },
+              "markdown": "Next, we’ve [mixed in](highlight-param/oscillator_saw_amplitude) the sawtooth oscillator."
+            },
+            {
+              "metadata": {
+                "footloose": "detune"
+              },
+              "markdown": "We’ve used both the [coarse](highlight-param/oscillator_saw_detune_coarse) and [fine](highlight-param/oscillator_saw_detune_fine) detune to set the saw just slightly less than an octave higher than the square oscillator. Try playing with these detune controls."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "pitch"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "pitch"
+              },
+              "markdown": "Then we’ve set the [pitch](highlight-param/oscillator_pitch_offset) down an octave and applied lots of pitch [envelope](highlight-param/oscillator_pitch_offset_envelope_amount) modulation (and just a touch of [LFO](highlight-param/oscillator_pitch_offset_lfo_amount))."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "modenv",
+                  "modtweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "modenv"
+              },
+              "markdown": "Then we’ve given the modulation envelope a [sustain](highlight-param/modulation_envelope_sustain) of 0 and slightly faster [attack](highlight-param/modulation_envelope_attack) and [decay](highlight-param/modulation_envelope_decay) times. This makes the pitch motion really noticeable."
+            },
+            {
+              "metadata": {
+                "footloose": "modtweaks"
+              },
+              "markdown": "Experiment with different envelope times to see how this affects the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pulse-oscillator",
+                "texts": [
+                  "pwm"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "pwm"
+              },
+              "markdown": "Next, we’ve added a touch of [LFO](highlight-param/oscillator_pulse_width_lfo_amount) modulation to the pulse width..."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "lfo",
+                "texts": [
+                  "lfo"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "lfo"
+              },
+              "markdown": "...and increased the [frequency](highlight-param/lfo_frequency) of the LFO."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "noise",
+                "texts": [
+                  "noise"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "noise"
+              },
+              "markdown": "Finally, we’ve added a bit of noise to make the sound dirtier."
+            },
+            {
+              "metadata": {},
+              "markdown": "There’s a lot happening in this sound! Experiment with the various controls to see what kinds of variations you can find."
+            }
+          ]
+        },
+        {
+          "id": "distortion",
+          "name": "Distortion",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Distortion"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "distortion",
+                "tooltip": "notes",
+                "notes": "c df d ef e f gf g af a bf b c'",
+                "sequence": "\\tempo 4 = 80  c4 g ef f e2 g,4 bf,\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "This recipe uses very fast LFO modulation of amplitude to create a noisy, distorted sound that has a different timbre depending on which pitch is being played."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "lfo",
+                "texts": [
+                  "lfofreq",
+                  "lfotweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "lfofreq"
+              },
+              "markdown": "To start, we’ve set the LFO to a high (and specific) [frequency](highlight-param/lfo_frequency): 523.25 Hz. (This corresponds to the pitch C.)"
+            },
+            {
+              "metadata": {
+                "footloose": "lfotweaks"
+              },
+              "markdown": "Try changing the LFO frequency and listen to how the character of each note changes."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "amplitude",
+                "texts": [
+                  "lfoamp"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "lfoamp"
+              },
+              "markdown": "Then we’ve set the amplitude LFO [amount](highlight-param/amplitude_lfo_amount) to 100%."
+            },
+            {
+              "metadata": {},
+              "markdown": "## What’s happening in this sound"
+            },
+            {
+              "metadata": {},
+              "markdown": "The distortion is caused by the amplitude changing at a very high frequency that’s out of tune with certain pitches. Cs are mostly undistorted, and pitches with harmonically-related frequencies to C (like F and G) are slightly more distorted. Less-related pitches (like E♭ or E) have more harshness."
+            }
+          ]
+        },
+        {
+          "id": "bouncing-ball",
+          "name": "Bouncing ball",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Bouncing ball"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "bouncingball",
+                "tooltip": "notes",
+                "notes": "e f fs g gs a as b c' cs' d' ds'",
+                "sequence": "\\tempo 4 = 12  e4 r16\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "This sound behaves like a rubber ball dropped on a hard surface; it starts bouncing slowly and high in the air. With each bounce it loses energy, so it gets faster and stays closer to the ground. It also gradually gets quieter."
+            },
+            {
+              "metadata": {
+                "classes": "highlighted right"
+              },
+              "markdown": "Play the sequence or hold a slider for a few seconds to get the full effect."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filter",
+                  "filtertweaks",
+                  "negativemod"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filter"
+              },
+              "markdown": "The key to this sound is the LFO that modulates filter frequency. We’ve turned the [LFO amount](highlight-param/filter_lfo_amount) up to 100% and the cutoff [frequency](highlight-param/filter_frequency) all the way down to 20 Hz."
+            },
+            {
+              "metadata": {
+                "footloose": "filtertweaks"
+              },
+              "markdown": "Most of what’s interesting about this sound is caused by the interaction between the modulation envelope, the LFO, and the filter. Play with the filter controls to see what happens."
+            },
+            {
+              "metadata": {
+                "footloose": "negativemod"
+              },
+              "markdown": "Note: The filter’s [envelope amount](highlight-param/filter_envelope_amount) can also be set to *negative* values. This causes the envelope to influence the filter cutoff in an inverted way: as the envelope rises, the cutoff frequency falls. (You can try this with the pitch and pulse width envelope amounts below as well.)"
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "modenv"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "modenv"
+              },
+              "markdown": " Notice that the LFO gets faster. We’ve done this by modulating the LFO frequency with the modulation envelope. We gave the envelope a slow [attack](highlight-param/modulation_envelope_attack) and full [sustain](highlight-param/modulation_envelope_sustain)."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "lfo",
+                "texts": [
+                  "lfo",
+                  "somethingnew",
+                  "lfotweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "lfo"
+              },
+              "markdown": "Then we’ve set the LFO’s [shape](highlight-param/lfo_shape) to saw and the [envelope amount](highlight-param/lfo_frequency_envelope_amount) to 15%."
+            },
+            {
+              "metadata": {
+                "footloose": "somethingnew"
+              },
+              "markdown": "Note that this is something new: we’re using a modulator (an envelope) to modulate *another modulator* (the LFO). This opens up whole new directions in sound design!"
+            },
+            {
+              "metadata": {
+                "footloose": "lfotweaks"
+              },
+              "markdown": "Try playing with different LFO [frequency](highlight-param/lfo_frequency) and envelope amount settings and listen to how the sound changes."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "pitch"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "pitch"
+              },
+              "markdown": "We’ve also used the modulation envelope to do some additional, subtle things. First, we’ve adjusted the pitch envelope [amount](highlight-param/oscillator_pitch_offset_envelope_amount) to cause the pitch to gradually rise about 2 semitones."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pulse-oscillator",
+                "texts": [
+                  "pwm"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "pwm"
+              },
+              "markdown": "Then we’ve used the [envelope](highlight-param/oscillator_pulse_width_envelope_amount) again to gradually narrow the pulse width, making the sound get “thinner” over time."
+            }
+          ]
+        },
+        {
+          "id": "release-pluck",
+          "name": "Release pluck",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Release pluck"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "release-pluck",
+                "tooltip": "notes",
+                "notes": "e g a",
+                "sequence": "\\tempo 4 = 108  g'16 r e, r ef' r c, bf' r db r ef' r c''\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "This sound has an interesting timbre change when you *release* the note, rather than when you play it."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "mod-envelope",
+                "texts": [
+                  "modenv"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "modenv"
+              },
+              "markdown": "We’ve started by setting a very fast modulation envelope."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filter",
+                  "filtersnap",
+                  "filtertweaks"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filter"
+              },
+              "markdown": "Then we’ve used the [envelope](highlight-param/filter_envelope_amount) to modulate the filter [cutoff](highlight-param/filter_frequency), but with a negative amount."
+            },
+            {
+              "metadata": {
+                "footloose": "filtersnap"
+              },
+              "markdown": "This means that the envelope will cause the filter cutoff to decrease when the note starts, then snap very quickly back up when the note is released."
+            },
+            {
+              "metadata": {
+                "footloose": "filtertweaks"
+              },
+              "markdown": "Try playing with the various filter and envelope controls and see how they affect the sound."
+            }
+          ]
+        },
+        {
+          "id": "two-sounds-in-one",
+          "name": "Two sounds in one",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Two sounds in one"
+            },
+            {
+              "metadata": {
+                "embed": "shared-synth",
+                "preset": "two-sounds-in-one",
+                "tooltip": "notes",
+                "notes": "c",
+                "sequence": "\\tempo 4 = 15  c4\n"
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {},
+              "markdown": "This sound uses a filter modulated by a square wave LFO to switch between two different “states” of the sound."
+            },
+            {
+              "metadata": {},
+              "markdown": "By default, we hear only one of these states."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "low-pass-filter",
+                "texts": [
+                  "filter",
+                  "holdnote",
+                  "lfoamount"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "filter"
+              },
+              "markdown": "To hear both parts of the sound, slowly move the filter’s LFO [amount](highlight-param/filter_lfo_amount) back and forth across its entire range."
+            },
+            {
+              "metadata": {
+                "footloose": "holdnote"
+              },
+              "markdown": "To get the full effect, play the sequence or hold a slider for a few seconds."
+            },
+            {
+              "metadata": {
+                "footloose": "lfoamount"
+              },
+              "markdown": "With an LFO amount of 100%, the filter is fully open when the square wave is high and completely closed (resulting in *silence*) when the square wave is low. If the LFO amount is set to -100%, however, the behavior is the opposite."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "pitch",
+                "texts": [
+                  "pitch"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "pitch"
+              },
+              "markdown": "At the same time, the [LFO](highlight-param/oscillator_pitch_offset_lfo_amount) is changing the pitch by five semitones up and down."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "saw-oscillator",
+                "texts": [
+                  "saw"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "saw"
+              },
+              "markdown": "Finally, we’ve [detuned](highlight-param/oscillator_saw_detune_coarse) the saw oscillator to add a second pitch to each “side” of the sound."
+            },
+            {
+              "metadata": {
+                "embed": "synth-panel",
+                "panel": "lfo",
+                "texts": [
+                  "lfo"
+                ]
+              },
+              "markdown": ""
+            },
+            {
+              "metadata": {
+                "footloose": "lfo"
+              },
+              "markdown": "Play with the LFO to see how it changes the sound."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "learning-more",
+      "title": "Learning more",
+      "subtitle": "Where to go from here",
+      "pages": [
+        {
+          "id": "learning-more",
+          "name": "Learning more",
+          "chunks": [
+            {
+              "metadata": {},
+              "markdown": "# Learning more"
+            },
+            {
+              "metadata": {},
+              "markdown": "Congratulations on finishing *Learning Synths*!"
+            },
+            {
+              "metadata": {},
+              "markdown": "You’ve now learned how various parts of a synthesizer work together. Although all synths are a bit different, you’ll find oscillators, filters, envelopes, and LFOs in many of them."
+            },
+            {
+              "metadata": {},
+              "markdown": "From here, there are lots of ways to learn more. Here are some ideas for going further:"
+            },
+            {
+              "metadata": {},
+              "markdown": "- visit the [Playground](/playground), where the whole synth is available in one place. You can modify the sounds you’ve used in the lessons and make your own.\n- learn about [different types of synthesis](https://en.wikipedia.org/wiki/Synthesizer#Sound_synthesis). This website uses a *subtractive* synth; a filter subtracts frequencies from the rich timbre of the oscillators. But subtractive synthesis is just one of many ways to make electronic sounds.\n- try out the synthesizers in the Suite edition of [Ableton Live](https://www.ableton.com/live/) to experiment with some of these different types of synthesis. For example, [Wavetable](https://www.ableton.com/packs/wavetable/) uses wavetable synthesis, while [Operator](https://www.ableton.com/packs/operator/) uses FM synthesis.\n- explore more types of synthesizers at [maxforlive.com](http://maxforlive.com/library/index.php?type=instrument). Or even learn to build synths yourself using [Max for Live](https://www.ableton.com/live/max-for-live/), which is included in the Suite edition of Live.\n- check out [learningmusic.ableton.com](https://learningmusic.ableton.com/), our interactive lessons on the fundamentals of music making."
+            },
+            {
+              "metadata": {},
+              "markdown": "Finally, [we’d love to hear from you](mailto:learning@ableton.com?subject=learningsynths.ableton.com) about your experience with these lessons, and anything else you’d like to learn about."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
